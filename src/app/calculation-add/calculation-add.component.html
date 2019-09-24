@@ -1,0 +1,32 @@
+<div class="card">
+    <div class="card-body">
+      <div class="row">
+      <div class="col-md-6">
+          <form>
+              <div class="form-group">
+                <label class="col-md-4">First Number</label>
+                <input type="number" class="form-control" name="FirstNumber" [(ngModel)]="model.FirstNumber"  />
+              </div>
+              <div class="form-group">
+                <label class="col-md-4">Second number </label>
+                <input type="number" class="form-control" name="SecondNumber" [(ngModel)]="model.SecondNumber"  />
+              </div>
+              <div class="form-group">
+                <label class="col-md-4">User Name</label>
+                <input type="text" class="form-control" name="UserName" [(ngModel)]="model.UserName"  />
+              </div>
+              <div class="form-group">
+                  <button (click)="doCalculation()"
+                         class="btn btn-primary">
+                      Do Calculation
+                   </button>
+              </div>
+            </form>
+      </div>
+      <div class="col-md-6">
+        <h4>Summation  Result</h4>
+        <p>{{model.SummationResult}}</p>
+      </div>
+    </div>
+    </div>
+  </div>
